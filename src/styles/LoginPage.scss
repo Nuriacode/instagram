@@ -1,0 +1,35 @@
+.all {
+  border: 1px solid grey;
+  margin-top: 45px;
+  margin-bottom: 211px;
+  margin-left: 119px;
+  margin-right: 119px;
+}
+.header {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__img {
+    width: 175px;
+    margin-top: 47px;
+    margin-bottom: 25px;
+  }
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__sectionOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

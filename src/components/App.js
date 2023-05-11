@@ -1,11 +1,14 @@
 /* SECCIÓN DE IMPORT */
-
+import { Routes, Route } from "react-router-dom";
 // - De React
 // - Nuestros
 // - Sass
 import '../styles/App.scss';
+import LoginPage from "./login/LoginPage";
+import ProfilePage from "./profile/ProfilePage";
+import SingUp from "./signup/SingUp";
 // - Imágenes
-import instagramblack from "../imges/instagramblack.png"
+
 
 /* SECCIÓN DEL COMPONENTE */
 function App() {
@@ -19,17 +22,17 @@ function App() {
 
   /* HTML */
   return <div className="App">{
-    /* Aquí va el HTML */
-    <>
-    <header>
-      <img className="header__img"
-      src={instagramblack}
-      alt="logo instagram"/>
-    </header>
-    <body>
-      <input type="text"/>
-    </body>
-    </>
+    <Routes>
+        <Route
+        path="/" 
+        element={<LoginPage className='login'/>} />
+        <Route
+        path="/profile" 
+        element={<ProfilePage className='profile'/>} />
+        <Route
+        path="/signup" 
+        element={<SingUp className='singup'/>} />
+      </Routes>
     }</div>;
 }
 
