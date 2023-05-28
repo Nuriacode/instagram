@@ -1,9 +1,17 @@
+.imagePhones{
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  &--img{
+    height: 625px;
+  }
+}
+
 .all {
+  font-family: "Roboto", sans-serif;
   border: 1px solid grey;
-  margin-top: 45px;
-  margin-bottom: 211px;
-  margin-left: 119px;
-  margin-right: 119px;
 }
 .header {
   font-family: "Roboto", sans-serif;
@@ -25,11 +33,81 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 
   &__sectionOne {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1.3rem;
+    margin-left: 47px;
+    margin-right: 47px;
+    margin-bottom: 21px;
+
+  
+    &__inputSubmit {
+      width: 268px;
+      height: 38px;
+      background-color: #409eff;
+      color: white;
+      border-radius: 10px;
+      border: 0px;
+      font-size: 14px;
+    }
+
+    &__facebook {
+      color: #00376b;
+      display: flex;
+      gap: 8px;
+      &--text {
+        font-size: 14px;
+      }
+    }
+
+    &__forgottenPassword {
+      color: #00376b;
+      font-size: 12px;
+    }
+  }
+
+  &__sectionTwo {
+    border: 1px solid grey;
+    display: flex;
+    gap: 5px;
+    padding-left: 74px;
+    padding-top: 23px;
+    padding-right: 74px;
+    padding-bottom: 23px;
+    &--question {
+      font-size: 14px;
+    }
+    &--link {
+      font-size: 14px;
+      text-decoration: none;
+      color: #409eff;
+      font-weight: bold;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
+
+  &__sectionThree {
+    display: flex;
+    gap: 10px;
+
+    &--appleImg {
+      width: 136px;
+      height: 44px;
+    }
+
+    &--googleImg {
+      width: 136px;
+      height: 44px;
+    }
   }
 }

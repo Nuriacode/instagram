@@ -1,4 +1,4 @@
-import instagramblack from "../../imges/instagramblack.png"
+import instagramblack from "../../images/instagramblack.png"
 
 const HeaderLogin = () => {
     return (

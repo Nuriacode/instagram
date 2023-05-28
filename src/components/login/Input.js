@@ -1,15 +1,25 @@
-const Input = () => {
+import "../../styles/login/input.scss"
+
+const Input = ({htmlFor, placeholder,
+handleChangeInput}) => {
+
+  const changeInput = (ev) => {
+    const inputValue = ev.target.value;
+    const inputName = ev.target.name;
+    handleChangeInput (inputValue, inputName)
+  }
+
   return (
-    <label htmlFor="" className="">
       <input
-        className="sectionOne__inputText"
-        required
+      required
+      className='inputText'
         type="text"
-        name=""
+        name={htmlFor}
         value=""
-        placeholder=""
+        id={htmlFor}
+        placeholder={placeholder}
+        onChange={changeInput}
       />
-    </label>
   );
 };
 
