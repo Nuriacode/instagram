@@ -11,7 +11,7 @@ const SingUp = () => {
       <body className="body">
         <div className="body__all">
           <HeaderLogin />
-          <h2 className="body__all__text">
+          <h2 className="body__all__textOne">
             Regsístrate para ver fotos y vídeos de tus amigos.
           </h2>
           <label className="body__all__labelFacebook">
@@ -39,23 +39,16 @@ const SingUp = () => {
               hacemos de las cookies y tecnologías similares en nuestra Política
               de cookies.
             </p>
-            <Link to="/profile">
-              <input
-                className="body__all__sectionOne--nextStep"
-                required
-                type="submit"
-                name=""
-                value="Siguiente"
-              />
+            <Link 
+            className="body__all__sectionOne--nextStep"
+            to="/profile">
+              <label>Siguiente</label>
             </Link>
-            <h3 className="body__all__sectionOne--forgottenPassword">
-              ¿Has olvidado la contraseña
-            </h3>
           </section>
         </div>
         <section className="body__all__sectionTwo">
           <h2 className="body__all__sectionTwo--question">¿Tienes una cuenta?</h2>
-          <Link className="body__all--link" to="/">
+          <Link className="body__all__sectionTwo--link" to="/">
             Entrar
           </Link>
         </section>
