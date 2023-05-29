@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import phones_2x from "../../images/phones_2x.png";
 import app_store from "../../images/app_store.png";
 import google from "../../images/google.png"
 import HeaderLogin from "./HeaderLogin";
@@ -10,16 +9,14 @@ import Input from "./Input";
 const LoginPage = () => {
   return (
     <>
-     <div 
-     className="imagePhones">
-          <img 
-            className="imagePhones--img"
-            src={phones_2x} alt="phones"></img>
-      
+     <div className="allSections" >
+      <div className="allSections__imagePhones">
+        <div className="allSections__imagePhones--img"></div>
+      </div>
       <body className="body">
         <div className="all">
           <HeaderLogin />
-          <section className="body__sectionOne">
+          <form className="body__sectionOne">
             <Input
               htmlFor={"user"}
               placeholder={"Teléfono, usuario o correo electrónico"}
@@ -44,7 +41,7 @@ const LoginPage = () => {
             <h3 className="body__sectionOne__forgottenPassword">
               ¿Has olvidado la contraseña
             </h3>
-          </section>
+          </form>
         </div>
         <section className="body__sectionTwo">
           <h2 className="body__sectionTwo--question">¿No tienes una cuenta?</h2>
