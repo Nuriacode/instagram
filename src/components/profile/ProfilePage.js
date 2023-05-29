@@ -1,8 +1,17 @@
+import FeedProfile from "./FeedProfile";
+import HeaderProfile from "./HeaderProfile";
+import NavProfile from "./NavProfile";
+
+
 const ProfilePage = () => {
     return (
-        <header>
-            pagina de perfil
-        </header>
+        <>
+        <div className="profilePage">
+        <HeaderProfile/>
+        <FeedProfile/>
+        <NavProfile/>
+        </div>
+        </>
     )
 }
 
