@@ -1,3 +1,10 @@
 .feedProfile{
     height: 85vh;
+    border: 1px solid greenyellow;
+    @media screen and (min-width:768px){
+        height: 100vh;
+        width: 95vw;
+        position: absolute;
+        right: 0;
+    }
 }

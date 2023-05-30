@@ -3,25 +3,25 @@ import "../../styles/profile/headerProfile.scss";
 
 const HeaderProfile = () => {
   return (
-    <header className="header">
+    <header className="headerProfile">
       <img 
-      className="header__logoImage"
+      className="headerProfile__logoImage"
       src={instagramblack} 
       alt="logo instagram" />
       <div
-      className="header__searchPart"
+      className="headerProfile__searchPart"
       >
         <div
-        className="header__searchPart__box"
+        className="headerProfile__searchPart__box"
         >
           <i 
-          className="header__searchPart__box--icon fa-solid fa-magnifying-glass"></i>
+          className="headerProfile__searchPart__box--icon fa-solid fa-magnifying-glass"></i>
           <input 
-            className="header__searchPart__box--input"
+            className="headerProfile__searchPart__box--input"
           type="text" placeholder="Buscar"></input>
         </div>
         <i 
-        className="header__searchPart__heartIcon fa-regular fa-heart"></i>
+        className="headerProfile__searchPart__heartIcon fa-regular fa-heart"></i>
       </div>
     </header>
   );

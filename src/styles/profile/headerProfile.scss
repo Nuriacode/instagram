@@ -1,10 +1,13 @@
-.header{
+.headerProfile{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(200, 200, 200);
     padding-bottom: 13px;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 
     &__logoImage{
         width: 103px;

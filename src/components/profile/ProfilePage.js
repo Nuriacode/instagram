@@ -7,9 +7,12 @@ const ProfilePage = () => {
     return (
         <>
         <div className="profilePage">
-        <HeaderProfile/>
-        <FeedProfile/>
-        <NavProfile/>
+        <HeaderProfile
+        />
+        <FeedProfile
+        />
+        <NavProfile
+        />
         </div>
         </>
     )
