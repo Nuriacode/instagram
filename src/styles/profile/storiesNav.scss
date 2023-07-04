@@ -1,0 +1,27 @@
+.stories{
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    border: solid 1px blue;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.infinite-scroll-component{
+    overflow-x: hidden;
+}
+
+.userList{
+    
+   &--img{
+    width: 65px;
+    border-radius: 50%;
+    border: solid 1px pink;
+   }
+   &--text {
+       text-align: center;
+   }
+}
+

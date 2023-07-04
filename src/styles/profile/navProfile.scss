@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
   width: 100vw;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -9,7 +10,6 @@
   background-color: red;
   position: absolute;
   bottom: 0;
-
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -23,7 +23,10 @@
     position: absolute;
     top: 0;
   }
-
+  &__icon0 {
+    font-size: 23px;
+    display: none;
+  }
   &__icon1 {
     font-size: 23px;
   }
@@ -33,10 +36,24 @@
   &__icon3 {
     font-size: 23px;
   }
-  &__icon4{
+  &__icon4 {
     font-size: 23px;
   }
-  &__icon5{
+  &__icon5 {
     font-size: 23px;
+  }
+  &__icon6 {
+    font-size: 23px;
+  }
+  &__icon7 {
+    font-size: 23px;
+  }
+  &__icon8 {
+    font-size: 23px;
+    display: none;
+  }
+  &__icon9 {
+    font-size: 23px;
+    display: none;
   }
 }

@@ -1,4 +1,3 @@
-/* SECCIÓN DE IMPORT */
 import { Routes, Route } from "react-router-dom";
 // - De React
 // - Nuestros
