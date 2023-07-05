@@ -13,18 +13,21 @@ const FeedProfile = () => {
       setListUsers(dataUsers);
     });
   }, []);
+  console.log(listUsers)
+
+
 
   return (
     <>
-      <div className="feedProfile">
+    <InfiniteScroll
+          dataLength={listUsers.length}
+          className="allFeed"
+        >
+      <div className="allFeed__feedProfile">
         <StoriesNav listUsers={listUsers} />
       </div>
-        <InfiniteScroll
-          dataLength={listUsers.length}
-          className="feedImages"
-        >
-          <ul>
-            <li key={listUsers.id}>
+          <ul key={listUsers.id}>
+            <li >
                 <p>{listUsers.name}</p>
             </li>
           </ul>

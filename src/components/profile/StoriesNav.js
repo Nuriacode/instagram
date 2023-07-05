@@ -3,9 +3,11 @@ import "../../styles/profile/storiesNav.scss";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 const StoriesNav = ({ listUsers }) => {
+
   const dataUsers = listUsers.map((eachUser) => {
     return <UsersStories eachUser={eachUser} />;
   });
+  
   return (
     <InfiniteScroll
     dataLength={listUsers.length}
