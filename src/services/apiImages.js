@@ -7,7 +7,7 @@ const getDataPictures = () => {
             const dataImages = images.map((eachImage) => {
                 return {
                     id: eachImage.id,
-                    url: eachImage.url,
+                    url: eachImage.download_url,
                 };
             });
             return dataImages
