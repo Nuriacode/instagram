@@ -3,7 +3,7 @@ const getDataUsers = () => {
         fetch ("https://randomuser.me/api/?results=50")
         .then((response)=> response.json())
         .then ((data)=> {
-            console.log(data.results)
+            // console.log(data.results)
             const dataUsers = data.results.map((eachUser) => {
                 return {
                     name: eachUser.name.first,
