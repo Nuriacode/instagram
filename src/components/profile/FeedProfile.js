@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../../styles/profile/feedProfile.scss";
 import StoriesNav from "./StoriesNav";
+import FeedImages from "./FeedImages";
 import getDataUsers from "../../services/api";
 import InfiniteScroll from "react-infinite-scroll-component";
 import getDataPictures from "../../services/apiImages";
@@ -18,7 +19,7 @@ const FeedProfile = () => {
   // console.log(listUsers)
   useEffect(() => {
     getDataPictures().then((dataImages) => {
-      setListUsers(dataImages)
+      setListImages(dataImages)
     })
   }, [])
 
@@ -33,9 +34,9 @@ const FeedProfile = () => {
         <StoriesNav listUsers={listUsers} />
       </div>
           <ul key={listUsers.id}>
-            <li >
-                <p>{listUsers.name}</p>
-            </li>
+            <FeedImages 
+            listUsers={listUsers}
+            listImages={listImages}/>
           </ul>
         </InfiniteScroll>
     </>
