@@ -19,26 +19,15 @@ const FeedProfile = () => {
   // console.log(listUsers)
   useEffect(() => {
     getDataPictures().then((dataImages) => {
-      setListImages(dataImages)
-    })
-  }, [])
-
+      setListImages(dataImages);
+    });
+  }, []);
 
   return (
     <>
-    <InfiniteScroll
-          dataLength={listUsers.length}
-          className="allFeed"
-        >
-      <div className="allFeed__feedProfile">
-        <StoriesNav listUsers={listUsers} />
-      </div>
-          <ul key={listUsers.id}>
-            <FeedImages 
-            listUsers={listUsers}
-            listImages={listImages}/>
-          </ul>
-        </InfiniteScroll>
+      <StoriesNav className="allFeed__feedProfile" listUsers={listUsers} />
+
+      <FeedImages listUsers={listUsers} listImages={listImages} />
     </>
   );
 };

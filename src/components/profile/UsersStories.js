@@ -7,8 +7,6 @@ const UsersStories = ({eachUser}) => {
             <h2 className="userList--text">
                 {eachUser.name}
             </h2>
-
-            
         </li>
     )
 }
