@@ -12,24 +12,10 @@ const FeedImages = ({ listImages, listUsers }) => {
     );
   });
 
-//   const dataImages = listImages.map((eachImage) => {
-//     return (
-//       <>
-//       <ul>
-//         <li key={eachImage.id}>
-//              <img src={eachImage.url} alt={eachImage.url}></img>
-//         </li>
-//       </ul>
-       
-//       </>
-//     );
-//   });
-
   return (
     <>
     <div>
       {dataUsersFeed}
-         {/* <div>{dataImages}</div> */}
     </div>
  
       </>
