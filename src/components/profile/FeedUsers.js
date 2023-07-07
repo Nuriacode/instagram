@@ -14,11 +14,13 @@ const FeedUsers = ({ eachUserFeed, listImages }) => {
       <div className="feedUserList__divUser">
         <div className="feedUserList__divUser__user">
           <img
-          className="feedUserList__divUser__user--imguser"
-          src={eachUserFeed.photo}
-          alt={eachUserFeed.name}
-        />
-          <h2 className="feedUserList__divUser__user--text">{eachUserFeed.name}</h2>
+            className="feedUserList__divUser__user--imguser"
+            src={eachUserFeed.photo}
+            alt={eachUserFeed.name}
+          />
+          <h2 className="feedUserList__divUser__user--text">
+            {eachUserFeed.name}
+          </h2>
         </div>
         <div className="feedUserList__divIcon">
           <i className="feedUserList__divIcon--icon fa-solid fa-ellipsis"></i>
@@ -28,15 +30,18 @@ const FeedUsers = ({ eachUserFeed, listImages }) => {
       <div className="feedUserList__image">
         <img
           className="feedUserList__image--img"
-          src="https://picsum.photos/id/0/5000/3333"
+          src="https://picsum.photos/id/7/4728/3168"
           alt="pictures"
         />
       </div>
       <div className="feedUserList__icons">
-      <i class="fa-regular fa-heart"></i>
-      <i class="fa-regular fa-comment"></i>
-      <i class="fa-regular fa-paper-plane"></i>
-      <i class="fa-regular fa-bookmark"></i>
+        <div>
+          <i className="feedUserList__icons--icon fa-regular fa-heart"></i>
+          <i className="feedUserList__icons--icon fa-regular fa-comment"></i>
+          <i className="feedUserList__icons--icon fa-regular fa-paper-plane"></i>
+        </div>
+
+        <i className="fa-regular fa-bookmark"></i>
       </div>
     </li>
   );
