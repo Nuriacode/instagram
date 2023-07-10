@@ -5,7 +5,7 @@
     // border: solid 1px blue;
     gap: 15px;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 50px;
     margin-bottom: 20px;
 }
 
@@ -14,11 +14,13 @@
 }
 
 .userList{
-    
    &--img{
     width: 65px;
+    border-width: 3px;
+    border-style: solid;
     border-radius: 50%;
-    border: solid 2px rgb(255, 65, 96);
+    border-image: url('../../images/circle.png') 3 fill;
+    
    }
    &--text {
        text-align: center;
