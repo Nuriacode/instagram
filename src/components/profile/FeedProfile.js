@@ -3,7 +3,6 @@ import "../../styles/profile/feedProfile.scss";
 import StoriesNav from "./StoriesNav";
 import FeedImages from "./FeedImages";
 import getDataUsers from "../../services/api";
-import InfiniteScroll from "react-infinite-scroll-component";
 import getDataPictures from "../../services/apiImages";
 
 const FeedProfile = () => {

@@ -4,6 +4,10 @@
     &__feedProfile {
             height: 85vh;
             border: 1px solid greenyellow;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
     
             @media screen and (min-width:768px) {
                 height: 100vh;

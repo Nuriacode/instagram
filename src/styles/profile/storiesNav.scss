@@ -1,16 +1,33 @@
+.arrowIcons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 600px;
+    color: white;
+    position: relative;
+    transform: translateY(78px);
+}
+
+.move-x{
+    transform: translateX(100px);
+}
+
+
+
 .stories{
     display: flex;
     flex-direction: row;
-    height: 30%;
+    height: 100%;
+    width: 630px;
     // border: solid 1px blue;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 50px;
-    margin-bottom: 20px;
-}
-
-.infinite-scroll-component{
+    margin-bottom: 40px;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .userList{
