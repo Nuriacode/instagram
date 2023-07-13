@@ -32,9 +32,13 @@
   }
   &__image {
     align-self: center;
+    align-items: center;
     width: 468px;
     height: 585px;
+
     &--img {
+      align-self: center;
+      align-items: center;
       width: 468px;
       height: 585px;
     }
@@ -45,7 +49,7 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    width: 438px;
+    width: 490px;
     align-self: center;
     font-size: 24px;
     margin-top: 10px;

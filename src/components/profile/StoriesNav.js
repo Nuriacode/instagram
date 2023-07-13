@@ -14,27 +14,27 @@ const StoriesNav = ({ listUsers }) => {
   const containerRef = useRef(null);
 
   const scrollLeft = () => {
-    containerRef.current.scrollLeft -= 300;
+    containerRef.current.scrollLeft -= 230;
   };
   
   const scrollRight = () => {
-    containerRef.current.scrollLeft += 300;
+    containerRef.current.scrollLeft += 230;
   };
 
   
   
   return (
-    <>
-    <div className="arrowIcons">
-      <i className={`arrowIcons__left fa-solid fa-circle-chevron-left`}
+    <div className="divNavStories">
+    <div className="divNavStories__arrowIcons">
+      <i className="divNavStories__arrowIcons__left fa-solid fa-circle-chevron-left"
       onClick={scrollLeft}
       ></i>
-      <i className="arrowIcons__right  fa-solid fa-circle-chevron-right"
+      <i className="divNavStories__arrowIcons__right  fa-solid fa-circle-chevron-right"
       onClick={scrollRight}
       ></i>
      </div>
-      <ul className={`stories`} ref={containerRef}>{dataUsers}</ul>
-   </>
+      <ul className="divNavStories__stories" ref={containerRef}>{dataUsers}</ul>
+   </div>
   );
 };
 

@@ -1,4 +1,8 @@
-.arrowIcons{
+.divNavStories {
+    display: grid;
+    place-items: center;
+
+  &__arrowIcons {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -7,42 +11,37 @@
     width: 600px;
     color: white;
     position: relative;
-    transform: translateY(78px);
-}
+    transform: translateY(65px);
+  }
 
-
-
-
-.stories{
+  &__stories {
     display: flex;
     flex-direction: row;
     height: 100%;
-    // width: 630px;
+    width: 630px;
     // border: solid 1px blue;
     gap: 15px;
     margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-bottom: 40px;
-    //overflow-x: hidden;
     overflow-y: hidden;
+    overflow-x: hidden;
+  }
 }
 
-.stories::-webkit-scrollbar{
-    display: none;
-}
 
-.userList{
-   &--img{
+.userList {
+  display: flex;
+  flex-direction: column;
+
+  &--img {
     width: 65px;
     border-width: 3px;
     border-style: solid;
     border-radius: 50%;
-    border-image: url('../../images/circle.png') 3 fill;
-    
-   }
-   &--text {
-       text-align: center;
-   }
+    border-image: url("../../images/circle.png") 3 fill;
+  }
+  &--text {
+    text-align: center;
+  }
 }
-

@@ -24,7 +24,8 @@ const FeedProfile = () => {
 
   return (
     <>
-      <StoriesNav className="allFeed__feedProfile" listUsers={listUsers} />
+      <StoriesNav 
+      listUsers={listUsers} />
 
       <FeedImages listUsers={listUsers} listImages={listImages} />
     </>
