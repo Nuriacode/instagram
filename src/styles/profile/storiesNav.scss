@@ -10,9 +10,6 @@
     transform: translateY(78px);
 }
 
-.move-x{
-    transform: translateX(100px);
-}
 
 
 
@@ -20,14 +17,19 @@
     display: flex;
     flex-direction: row;
     height: 100%;
-    width: 630px;
+    // width: 630px;
     // border: solid 1px blue;
     gap: 15px;
     margin-top: 30px;
     margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 40px;
-    overflow-x: hidden;
+    //overflow-x: hidden;
     overflow-y: hidden;
+}
+
+.stories::-webkit-scrollbar{
+    display: none;
 }
 
 .userList{
