@@ -8,6 +8,7 @@ const FeedUsers = ({ eachUserFeed, listImages }) => {
   //     </>
   //   )
   // })
+  const randomNumber = Math.floor(Math.random() * 1000000); 
 
   return (
     <li className="feedUserList">
@@ -42,6 +43,9 @@ const FeedUsers = ({ eachUserFeed, listImages }) => {
         </div>
 
         <i className="fa-regular fa-bookmark"></i>
+      </div>
+      <div className="feedUserList__likes">
+        {randomNumber} Me gusta
       </div>
     </li>
   );

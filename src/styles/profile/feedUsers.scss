@@ -5,7 +5,7 @@
   flex-direction: column;
   margin: 20px;
   margin-bottom: 20px;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   &__divUser {
     display: flex;
@@ -60,5 +60,21 @@
     .fa-regular{
         padding: 8px;
     }
+  }
+
+  &__likes{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    width: 490px;
+    align-self: center;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    border-bottom: 1px solid rgb(169, 169, 169);
   }
 }
