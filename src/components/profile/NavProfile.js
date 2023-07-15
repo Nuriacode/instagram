@@ -34,16 +34,27 @@ const NavProfile = () => {
         <p className="nav__div1--text">Reels</p>
       </div>
 
-      <div lassName="nav__div1">
+      <div className="nav__div1">
         <i className="nav__div1--icon1 fa-regular fa-square-plus" />
         <p className="nav__div1--text">Crear</p>
       </div>
 
-      <i className="nav__icon6 fa-regular fa-paper-plane"></i>
-      <i className="nav__icon7 fa-regular fa-heart"></i>
+      <div className="nav__div1">
+        <i className="nav__div1--icon1 fa-regular fa-paper-plane" />
+        <p className="nav__div1--text">Mensaje</p>
+      </div>
+
+      <div className="nav__div2">
+        <i className="nav__div2--icon2 fa-regular fa-heart" />
+        <p className="nav__div1--text">Notificaciones</p>
+      </div>
+
       <img className="nav__avatarImage" src={avatar_user} alt="foto avatar" />
 
-      <i className="nav__icon8 fa-solid fa-bars"></i>
+      <div className="nav__div1">
+        <i className="nav__div1--icon1 fa-solid fa-bars" />
+        <p className="nav__div1--text">Más</p>
+      </div>
     </nav>
   );
 };
