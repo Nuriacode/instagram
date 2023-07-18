@@ -6,8 +6,10 @@
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
+ 
+//   position: relative;
+//  transform: translateX(40px);
+  
 
   &__dataUser {
     display: flex;
@@ -23,18 +25,41 @@
     }
 
     &__data {
-      &--followers {
+    
+        &__userName{
+            &--name{
+                font-size: 20px;
+            }
+           
+        }
+        
+      &__followers {
         display: flex;
         flex-direction: row;
+
+        &--textFollowers{
+            font-size: 15px;
+            margin-right: 40px;
+            margin-top: 20px;
+            font-weight: bolder;
+        }
       }
     }
   }
+  
   &__dataImages {
-      
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    border-top: 1px solid grey;
+    padding: 50px;
+    justify-content: center;
+    
       &__li{
-        width: 50px;
-        &--img{
-            width: 50px;
+        width: 250px;
+        &--imgFeed{
+            width: 247px;
+            height: 250px;
         }
       }
   }
