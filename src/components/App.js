@@ -6,6 +6,7 @@ import '../styles/App.scss';
 import LoginPage from "./login/LoginPage";
 import ProfilePage from "./profile/ProfilePage";
 import SingUp from "./signup/SingUp";
+import Dashboard from "./profile/User/UserDashboard";
 // - Imágenes
 
 
@@ -31,6 +32,9 @@ function App() {
         <Route
         path="/signup" 
         element={<SingUp className='singup'/>} />
+        <Route 
+        path="/dashboard"
+        element={<Dashboard/>} />
       </Routes>
     }</div>;
 }

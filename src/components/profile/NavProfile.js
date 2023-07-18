@@ -1,6 +1,7 @@
 import "../../styles/profile/navProfile.scss";
 import avatar_user from "../../images/avatar_user.jpeg";
 import instagramblack from "../../images/instagramblack.png";
+import { Link } from "react-router-dom";
 
 const NavProfile = () => {
   return (
@@ -49,7 +50,10 @@ const NavProfile = () => {
         <p className="nav__div1--text">Notificaciones</p>
       </div>
 
-      <img className="nav__avatarImage" src={avatar_user} alt="foto avatar" />
+      <Link to="/dashboard">
+      <img className="nav__avatarImage" src={avatar_user} alt="foto avatar"/>
+      </Link>
+      
 
       <div className="nav__div1">
         <i className="nav__div1--icon1 fa-solid fa-bars" />
