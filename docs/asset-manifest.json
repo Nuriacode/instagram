@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.46aeca08.css",
-    "main.js": "./static/js/main.1b6b91ba.js",
+    "main.css": "./static/css/main.33eb2828.css",
+    "main.js": "./static/js/main.74a91596.js",
     "static/media/phones_2x.png": "./static/media/phones_2x.466715195dc6be3fffae.png",
     "static/media/screenshot4.png": "./static/media/screenshot4.a015f55058ad24a00428.png",
     "static/media/screenshot1.png": "./static/media/screenshot1.d688ff1f110b88f3c0c9.png",
     "static/media/screenshot3.png": "./static/media/screenshot3.66d6eaaf896694188857.png",
+    "static/media/avatar_user.jpeg": "./static/media/avatar_user.a52b98a0ac8592829940.jpeg",
     "static/media/screenshot2.png": "./static/media/screenshot2.a8b4d779fa1026a205a2.png",
     "static/media/instagramblack.png": "./static/media/instagramblack.3a1e154477fce443fbe4.png",
     "index.html": "./index.html",
-    "main.46aeca08.css.map": "./static/css/main.46aeca08.css.map",
-    "main.1b6b91ba.js.map": "./static/js/main.1b6b91ba.js.map"
+    "main.33eb2828.css.map": "./static/css/main.33eb2828.css.map",
+    "main.74a91596.js.map": "./static/js/main.74a91596.js.map"
   },
   "entrypoints": [
-    "static/css/main.46aeca08.css",
-    "static/js/main.1b6b91ba.js"
+    "static/css/main.33eb2828.css",
+    "static/js/main.74a91596.js"
   ]
 }
