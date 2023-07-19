@@ -15,10 +15,12 @@ const NavProfile = () => {
         />
       </div>
 
+      <Link to="/profile">
       <div className="nav__div1">
         <i className="nav__div1--icon1 fa-solid fa-house" />
         <p className="nav__div1--text">Inicio</p>
       </div>
+      </Link>
 
       <div className="nav__div2">
         <i className="nav__div2--icon2 fa-solid fa-magnifying-glass" />

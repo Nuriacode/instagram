@@ -64,7 +64,8 @@ const LoginPage = () => {
             src={google} alt="googlestore"></img>
           </Link>
         </section>
-        <h2>Creado por Nuria Castaño </h2>
+        <h2>Creado por Nuria Castaño</h2>
+        <p>Clone visual con fines de investigación y aprendizaje</p>
       </body>
       
       </div>
